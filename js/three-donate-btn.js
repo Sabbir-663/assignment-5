@@ -26,6 +26,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
     if (typeof inputNoakhali === 'number' && !isNaN(inputNoakhali)   && inputNoakhali<=balanceAvailable ) {
 
+       const time =new Date();
+       console.log(time);
        
        
       
@@ -41,12 +43,16 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
        <div class="px-3 py-4 border border-stone-400 rounded-md">
             
             <h3 class="text-xl font-bold py-4">${inputNoakhali} Taka is Donated for Flood Relief in Noakhali,Bangladesh</h3>
-            <p>Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
+            <p>Date: ${time}</p>
         </div>
 
 
        `
        document.getElementById('history-section').appendChild(div);
+
+      
+
+     
 
     }
     else{
@@ -78,7 +84,8 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
     if (typeof inputFeni === 'number' && !isNaN(inputFeni)   && inputFeni<=balanceAvailable ) {
 
        
-       
+        const time =new Date();
+        console.log(time);
       
 
         const newFeniBalance= inputFeni+balanceFeni;
@@ -87,7 +94,17 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
         const newAvailableBalance=balanceAvailable-inputFeni;
         document.getElementById('available-balance').innerText=newAvailableBalance;
 
-        alert('Thank You for donating ')
+        const div =document.createElement('div');
+       div.innerHTML=`
+       <div class="px-3 py-4 border border-stone-400 rounded-md">
+            
+            <h3 class="text-xl font-bold py-4">${inputFeni}Taka is Donated for Flood Relief in Feni,Bangladesh</h3>
+            <p>Date: ${time}</p>
+        </div>
+
+
+       `
+       document.getElementById('history-section').appendChild(div);
     }
     else{
         alert('Insufficient Balance haha Gorib')
@@ -116,7 +133,8 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
     if (typeof inputQuota === 'number' && !isNaN(inputQuota)   && inputQuota<=balanceAvailable ) {
 
        
-       
+        const time =new Date();
+        console.log(time);
       
 
         const newQuotaBalance= inputQuota+balanceQuota;
@@ -125,7 +143,17 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
         const newAvailableBalance=balanceAvailable-inputQuota;
         document.getElementById('available-balance').innerText=newAvailableBalance;
 
-        alert('Thank You for donating ')
+        const div =document.createElement('div');
+        div.innerHTML=`
+        <div class="px-3 py-4 border border-stone-400 rounded-md">
+             
+             <h3 class="text-xl font-bold py-4">${inputQuota}Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+             <p>Date: ${time}</p>
+         </div>
+ 
+ 
+        `
+        document.getElementById('history-section').appendChild(div);
     }
     else{
         alert('Insufficient Balance haha Gorib')
