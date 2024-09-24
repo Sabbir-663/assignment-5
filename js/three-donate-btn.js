@@ -36,7 +36,18 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
         const newAvailableBalance=balanceAvailable-inputNoakhali;
         document.getElementById('available-balance').innerText=newAvailableBalance;
 
-        alert('Thank You for donating ')
+       const div =document.createElement('div');
+       div.innerHTML=`
+       <div class="px-3 py-4 border border-stone-400 rounded-md">
+            
+            <h3 class="text-xl font-bold py-4">${inputNoakhali} Taka is Donated for Flood Relief in Noakhali,Bangladesh</h3>
+            <p>Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
+        </div>
+
+
+       `
+       document.getElementById('history-section').appendChild(div);
+
     }
     else{
         alert('Insufficient Balance haha Gorib')
