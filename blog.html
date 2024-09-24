@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+       <section class="py-10 bg-[#F9F7F3] mb-10  ">
+        <nav class="flex   mx-auto justify-around "> 
+            <div>
+                <button id="home-btn" class="bg-[#B4F461] text-black py-2  px-5 text-xl font-bold rounded-md">Home</button>
+            </div>
+            <div class="flex items-center">
+                <div>
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <p class="ml-1 font-bold text-black text-xl"> Donate Bangladesh </p>
+                </div>
+            </div>
+            <div class="flex ">
+                <div  class="mr-2">
+                    <img src="./assets/coin.png" alt="">
+                </div>
+                <div class="mr-2 "">
+                    <p class="font-bold text-xl">5500</p>
+                </div>
+                <div>
+                   <p class="font-bold text-xl"> BDT</p>
+                </div>
+            </div>
+            
+        </nav>
+       </section>
+       <section class="max-w-7xl mx-auto">
+        <div class="mb-6">
+          <h1 class="font-extrabold text-4xl ">Important Faq</h1>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-black-300  border h-24 content-center">
+            <div class="collapse-title text-2xl font-medium">What is Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM (Document Object Model) represents the structure of a webpage, enabling dynamic content manipulation.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-black-300  border h-24 content-center">
+            <div class="collapse-title text-2xl font-medium">How do you select an element from DOM?</div>
+            <div class="collapse-content">
+              <p>To select an element from the DOM we use getElementById, getElementsByClassName, querySelector, or querySelectorAll to select DOM elements.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-black-300  border h-24 content-center">
+            <div class="collapse-title text-2xl font-medium">What is event deligation in context of DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>
+                Event delegation allows parent elements to handle events for dynamically added or multiple child elements efficiently.</p>
+            </div>
+          </div>
+        <div tabindex="0" class="collapse collapse-arrow border-black-300  border h-24 content-center">
+            <div class="collapse-title text-2xl font-medium">How do you manipulate an events attribute and styles using dom?</div>
+            <div class="collapse-content">
+              <p>We use setAttribute() for attributes, addEventListener() for events, and style for CSS manipulation.</p>
+            </div>
+          </div>
+       </section>
+
+       
+    
+  
+</header>
+    
+    <main>
+
+    </main>
+    <script src="./js/home-btn.js"></script>
+</body>
+</html>
