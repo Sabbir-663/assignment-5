@@ -49,8 +49,9 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
        `
        document.getElementById('history-section').appendChild(div);
-
-      
+       document.getElementById('my_modal_5').showModal();
+   
+    //    my_modal_5.showModal()
 
      
 
@@ -105,6 +106,9 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
 
        `
        document.getElementById('history-section').appendChild(div);
+
+       document.getElementById('my_modal_5').showModal();
+
     }
     else{
         alert('Insufficient Balance haha Gorib')
@@ -154,6 +158,8 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
  
         `
         document.getElementById('history-section').appendChild(div);
+
+        document.getElementById('my_modal_5').showModal();
     }
     else{
         alert('Insufficient Balance haha Gorib')
