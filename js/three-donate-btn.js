@@ -49,10 +49,8 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
        `
        document.getElementById('history-section').appendChild(div);
-       document.getElementById('my_modal_5').showModal();
-   
-    //    my_modal_5.showModal()
-
+       const modal = document.getElementById('my_modal_5');
+       modal.showModal();
      
 
     }
@@ -62,6 +60,12 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
     
 })
 
+const modal = document.getElementById('my_modal_5');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+closeModalBtn.addEventListener('click', () => {
+  modal.close(); // Close the modal without reloading
+});
 
 // Feni Donate Button
 

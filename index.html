@@ -6,9 +6,15 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+
+
+
    
 </head>
-<body>
+<body class="font-lexend">
     <header id="sticky-header" class=" sticky top-0 ">
        <section class="py-10 bg-[#F9F7F3] mb-10  ">
         <nav class="flex  justify-around "> 
@@ -20,7 +26,7 @@
                     <img class="h-1/2 w-1/2 md:h-full md:w-full pl-2" src="./assets/logo.png" alt="">
                 </div>
                 <div>
-                    <p class="md:ml-1 font-bold text-black md:text-xl text-sm"> Donate Bangladesh </p>
+                    <p class="md:ml-1 font-bold text-black md:text-xl text-sm font-lexend"> Donate Bangladesh </p>
                 </div>
             </div>
             <div class="flex items-center">
@@ -28,7 +34,7 @@
                     <img src="./assets/coin.png" alt="">
                 </div>
                 <div class="mr-2 font-bold">
-                    <p id="available-balance" class="font-bold mdtext-xl text-md">45000</p>
+                    <p id="available-balance" class="font-bold md:text-xl text-md">45000</p>
                 </div>
                 <div>
                    <p class="font-bold md:text-xl text-md">BDT</p>
@@ -174,21 +180,18 @@
      
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
-            <h1 class="font-extrabold md:text-3xl text-2xl text-center">Congrats!</h1>
-            <br>
-           <div class="w-100% ">
-            <img class="text-center mx-auto" src="./assets/coin.png" alt="">
-           </div>
-           <br>
-            <p class="text-center ">You Have Donated For HumanKind</p>
-            <h1 class="font-bold md:text-2xl text-xl text-center">Successfully</h1>
-            <br>
-          <!-- <div class="modal-action flex justify-center ">
-            <form method="dialog ">
-              
-              <button class="btn">Close Confirmation</button>
-            </form>
-          </div> -->
+          <h1 class="font-extrabold md:text-3xl text-2xl text-center">Congrats!</h1>
+          <br>
+          <div class="w-full">
+            <img class="text-center mx-auto" src="./assets/coin.png" alt="coin">
+          </div>
+          <p class="text-center">You Have Donated For HumanKind</p>
+          <h1 class="font-bold md:text-2xl text-xl text-center">Successfully</h1>
+          <br>
+          <!-- Close Button -->
+          <div class="modal-action flex justify-center">
+            <button class="btn px-4" id="closeModalBtn">Close Confirmation</button>
+          </div>
         </div>
       </dialog>
     </main>
