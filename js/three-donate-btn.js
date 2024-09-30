@@ -19,12 +19,13 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
 
   //  Check if the input is a valid whole number
-    if (!/^[0-9]+$/.test(noakhaliInput)) {
+    if (!/^[0-9]+$/.test(noakhaliInput) || inputNoakhali === 0) {
         alert('Please enter a valid amount');
         return;
     }
+ 
 
-    if (typeof inputNoakhali === 'number' && !isNaN(inputNoakhali)   && inputNoakhali<=balanceAvailable ) {
+    if (typeof inputNoakhali === 'number' && !isNaN(inputNoakhali)   && inputNoakhali<=balanceAvailable   ) {
 
        const time =new Date();
        console.log(time);
@@ -49,13 +50,17 @@ document.getElementById('noakhali-donate-btn').addEventListener('click',function
 
        `
        document.getElementById('history-section').appendChild(div);
+
+       
        const modal = document.getElementById('my_modal_5');
        modal.showModal();
      
 
     }
+
+ 
     else{
-        alert('Insufficient Balance haha Gorib')
+        alert('Insufficient Balance ')
     }
     
 })
@@ -81,7 +86,7 @@ document.getElementById('feni-donate-btn').addEventListener('click',function(eve
 
 
   //  Check if the input is a valid whole number
-    if (!/^[0-9]+$/.test(feniInput)) {
+    if (!/^[0-9]+$/.test(feniInput) || inputFeni===0) {
         alert('Please enter a valid amount');
         return;
     }
@@ -133,7 +138,7 @@ document.getElementById('quota-donate-btn').addEventListener('click',function(ev
 
 
   //  Check if the input is a valid whole number
-    if (!/^[0-9]+$/.test(quotaInput)) {
+    if (!/^[0-9]+$/.test(quotaInput) || inputQuota===0) {
         alert('Please enter a valid amount');
         return;
     }
